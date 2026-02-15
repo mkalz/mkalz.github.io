@@ -42,3 +42,11 @@ hugoblox:
       enable: true
   search:
     enable: true
+    suggestions:
+      - Educational Technology
+  locale:
+    address_format: en-us
+  privacy:
+    enable: true
+  pro:
+    hide_attribution: false

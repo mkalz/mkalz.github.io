@@ -55,6 +55,9 @@ links:
   - icon: "brands/bluesky"
     url: "https://bsky.app/profile/kalz.cc"
     label: "Bluesky"
+  - icon: "hero/globe"
+    url: "https://kalz.cc"
+    label: "Website"
 interests:
   - "Open Education"
   - "Peer-Feedback"
@@ -126,3 +129,8 @@ awards:
     date: "2022-12-01"
     summary: "Awarded for groundbreaking work on efficient training of large models."
     icon: "hero/trophy"
+ids:
+  semantic_scholar: "2295803"
+  google_scholar: "6W4v6GQAAAA"
+  orcid: "0000-0003-1471-5827"
+  scopus: "18437133300"
