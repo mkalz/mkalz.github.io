@@ -14,15 +14,15 @@ main:
     weight: 20
   - name: Publications
     identifier: 680d2918
-    url: /#publications
+    url: "/#publications"
     weight: 30
   - name: News
     identifier: a9f65ea4
-    url: /#news
+    url: "/#news"
     weight: 40
   - name: Talks
     identifier: d2fa934f
-    url: /#talks
+    url: "/#talks"
     weight: 50
   - name: Projects
     identifier: 492e6bf3

@@ -14,29 +14,21 @@ postnominals:
 status:
   icon: "📚"
 role: "Professor of Educational Technology"
-bio: "
+bio: |
 
-  Marco Kalz is full professor of educational technology and Chief Information/Chief Digital Officer (CIO/CDO) at the Heidelberg University of Education.\ 
 
-  His research interest lies on the use of open education, pervasive technologies and formative assessment to support (lifelong) learning and knowledge construction.\ 
+  Marco Kalz is full professor of educational technology and Chief Information/Chief Digital Officer (CIO/CDO) at the Heidelberg University of Education. 
+  His research interest lies on the use of open education, pervasive technologies and formative assessment to support (lifelong) learning and knowledge construction. 
+  He has published more than 150 peer-reviewed publications. Marco is a researcher at the intersection of educational science, computer science and psychology with an 
+  interest in addressing global societal challenges like energy conservation, marine litter, resuscitation support and cancer education with educational technology. 
+  Marco is associate editor of the International Journal of Artificial Intelligence in Education and editorial board member of the Journal of Computing in Higher Education.
 
-  He has published more than 150 peer-reviewed publications. Marco is a researcher at the intersection of educational science, computer science and psychology with an
-
-  interest in addressing global societal challenges like energy conservation, marine litter, resuscitation support and cancer education with educational technology.
-
-  Marco is associate editor of the International Journal of Artificial Intelligence in Education and editorial board member of the Journal of Computing in Higher Education.\ 
-
-  He is a senior-fellow of the Interuniversity Center for Educational Sciences (ICO) and the Dutch research school on information and knowledge systems (SIKS).\ 
-
-  He is director of the study program E-Learning and Media Education and director of the Heidelberg Centre for Digital Transformation in Education.\ 
-
-  Over the years he could secure approx. 4 Mio EUR of research funding for his institutions from competitive projects with a total budget of 36 Mio EUR.\ 
-
-  He has been an keynote speaker on more than 60 conferences and events. Besides European projects he was and is regularly involved in educational innovation and consulting
-
-  projects with partners inside and outside of his institutions including clients like the International Labour Organisation, United Nations Environment Program,\ 
-
-  the European Commission, UNESCO or other international and national organizations.\n"
+  He is a senior-fellow of the Interuniversity Center for Educational Sciences (ICO) and the Dutch research school on information and knowledge systems (SIKS). 
+  He is director of the study program E-Learning and Media Education and director of the Heidelberg Centre for Digital Transformation in Education. 
+  Over the years he could secure approx. 4 Mio EUR of research funding for his institutions from competitive projects with a total budget of 36 Mio EUR. 
+  He has been an keynote speaker on more than 60 conferences and events. Besides European projects he was and is regularly involved in educational innovation and consulting 
+  projects with partners inside and outside of his institutions including clients like the International Labour Organisation, United Nations Environment Program,
+  the European Commission, UNESCO or other international and national organizations.
 affiliations:
   - name: "Heidelberg University of Education"
     url: "https://www.ph-heidelberg.de"
@@ -44,75 +36,78 @@ links:
   - icon: "at-symbol"
     url: "mailto:marco.kalz@gmail.com"
     label: "E-mail Me"
-  - icon: "brands/github"
-    url: "https://github.com/mkalz"
-  - icon: "brands/linkedin"
-    url: "https://www.linkedin.com/in/mkalz/"
   - icon: "academicons/google-scholar"
     url: "https://scholar.google.com/citations?user=6W4v6GQAAAAJ"
   - icon: "academicons/orcid"
     url: "https://orcid.org/0000-0003-1471-5827"
+  - icon: "brands/linkedin"
+    url: "https://www.linkedin.com/in/mkalz/"
+  - icon: "brands/github"
+    url: "https://github.com/mkalz"
   - icon: "brands/bluesky"
     url: "https://bsky.app/profile/kalz.cc"
     label: "Bluesky"
-  - icon: "hero/globe"
-    url: "https://kalz.cc"
-    label: "Website"
 interests:
   - "Open Education"
   - "Peer-Feedback"
   - "Data-Science in Education"
   - "Learner intentions"
   - "Educational scalability"
+  - "Education against misinformation"
 education:
   - degree: "PhD Educational Technology"
     institution: "Open University of the Netherlands, The Netherlands"
-    start: "2009-10-01"
-    end: "2006-02-01"
+    start: "2006-02-01"
+    end: "2009-10-16"
     summary: "Thesis on application of natural language processing for prior knowledge approximation. Published 4 papers in Q1 journals.\n"
     button:
       text: "Download dissertation"
-      url: "/resume.pdf"
+      url: "https://www.ou.nl/documents/40554/111697/Thesis_Kalz_final_2009.pdf/a268fdd9-9496-41f7-8717-ec113e5555de"
       icon: "hero/arrow-down-tray"
   - degree: "MA Multimedia Didactics"
     institution: "University of Nuremberg-Erlangen, Germany"
     start: "2001-10-01"
-    end: "2003-08-20"
+    end: "2003-04-04"
   - degree: "1st State Examination for Teachers"
     institution: "University of Cologne, Germany"
     start: "1996-10-01"
-    end: "2000-03-31"
+    end: "2000-11-22"
 experience:
   - role: "Professor of Educational Technology"
-    org: "Meta AI"
-    start: "2020-01-01"
-    summary: "Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.\n"
+    org: "Heidelberg University of Education"
+    start: "2018-04-01"
+    summary: "Director MA E-learning an Media Education, Director Heidelberg Centre for digital transformation in education. CIO/CDO \n"
     button:
       text: "View portfolio"
       url: "/"
       icon: "hero/arrow-down-tray"
-  - role: "AI Research Intern"
-    org: "OpenAI"
-    start: "2019-06-01"
-    end: "2019-12-31"
-    summary: "Worked on GPT-3 scaling. Co-authored paper on prompt engineering.\n"
+  - role: "Elected President"
+    org: "Europaen Association of Technology-Enhanced Learning (EATEL) e.V."
+    start: "2017-09-01"
+    end: "2021-09-01"
+    summary: "Strategy development, External representation, Financial and legal responsibility, Business development and network development\n"
+  - role: "UNESCO Chair of Open Education "
+    org: "Open University of the Netherlands"
+    start: "2015-04-01"
+    end: "2020-01-31"
+    summary: "Establishment of UNESCO Chair of Open Education. Principal Investigator SOONER project.\n"
 skills:
   - name: "Technical Skills"
     items:
-      - label: "Python"
-        level: 5
-      - label: "Machine Learning"
-        level: 5
-      - label: "Cloud Computing"
+      - label: "R-coding"
+        level: 4
+      - label: "Data-Science"
+        level: 4
+      - label: "Research methods"
         level: 4
   - name: "Research & Communication"
     items:
       - label: "Academic Writing"
         level: 5
       - label: "Conference Presentations"
-        level: 4
+        level: 5
       - label: "Grant Proposals"
-        level: 4
+        level: 5
 languages:
   - name: "German"
     level: 5
@@ -123,12 +118,6 @@ languages:
   - name: "Dutch"
     level: 4
     label: "Fluent"
-awards:
-  - title: "Best Paper Award"
-    awarder: "NeurIPS"
-    date: "2022-12-01"
-    summary: "Awarded for groundbreaking work on efficient training of large models."
-    icon: "hero/trophy"
 ids:
   semantic_scholar: "2295803"
   google_scholar: "6W4v6GQAAAA"

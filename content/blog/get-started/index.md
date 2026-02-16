@@ -6,7 +6,7 @@ date: 2023-10-27
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
 
 cover:
   image: "https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2560"
@@ -35,6 +35,7 @@ tags:
 
 content_meta:
   trending: true
+
 ---
 
 Welcome 👋

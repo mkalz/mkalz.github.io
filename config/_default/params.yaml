@@ -11,9 +11,9 @@ hugoblox:
     mode: system
     pack: marine
     colors:
-      primary: indigo
-      secondary: ""
-      neutral: ""
+      primary: blue
+      secondary: "teal"
+      neutral: "neutral"
   typography:
     font: sans
     size: md
@@ -28,11 +28,19 @@ hugoblox:
     align: center
     search: true
     theme_toggle: true
+    cta:
+      enable: true
+      text: Contact me
+      url: /contact
   footer:
     style: minimal
     language_switcher: true
   copyright:
     notice: © {year} {name}
+    license:
+      allow_commercial: true
+      allow_derivatives: true
+      share_alike: false
   content:
     math:
       enable: false

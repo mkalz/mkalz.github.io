@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: "An example conference paper"
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
@@ -10,18 +10,18 @@ authors:
 
 # Author notes (optional)
 author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+  - "Equal contribution"
+  - "Equal contribution"
 
-date: '2013-07-01T00:00:00Z'
+date: "2013-07-01T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: "2017-01-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
 publication: In *HugoBlox Kit Conference*
@@ -48,21 +48,21 @@ links:
   - type: pdf
     url: ""
   - type: code
-    url: https://github.com/HugoBlox/kit
+    url: "https://github.com/HugoBlox/kit"
   - type: dataset
-    url: https://github.com/HugoBlox/kit
+    url: "https://github.com/HugoBlox/kit"
   - type: slides
-    url: https://www.slideshare.net/
+    url: "https://www.slideshare.net/"
   - type: source
-    url: https://github.com/HugoBlox/kit
+    url: "https://github.com/HugoBlox/kit"
   - type: video
-    url: https://youtube.com
+    url: "https://youtube.com"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
+  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
+  focal_point: ""
   preview_only: false
 
 # Associated Projects (optional).
@@ -79,6 +79,7 @@ projects:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
+
 ---
 
 > [!NOTE]

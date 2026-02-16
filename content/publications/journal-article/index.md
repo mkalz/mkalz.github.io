@@ -1,11 +1,11 @@
 ---
 title: "An example journal article"
 authors:
-- me
-- Robert Ford
+  - me
+  - Robert Ford
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
+  - "Equal contribution"
+  - "Equal contribution"
 date: "2015-09-01T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
@@ -26,7 +26,7 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- Source Themes
+  - Source Themes
 featured: false
 
 hugoblox:
@@ -35,9 +35,9 @@ hugoblox:
 
 links:
   - type: pdf
-    url: http://arxiv.org/pdf/1512.04133v1
+    url: "http://arxiv.org/pdf/1512.04133v1"
   - type: code
-    url: https://github.com/HugoBlox/kit
+    url: "https://github.com/HugoBlox/kit"
   - type: dataset
     url: ""
   - type: poster
@@ -45,16 +45,16 @@ links:
   - type: project
     url: ""
   - type: slides
-    url: https://www.slideshare.net/
+    url: "https://www.slideshare.net/"
   - type: source
     url: ""
   - type: video
     url: ""
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)"
   focal_point: ""
   preview_only: false
 
@@ -71,12 +71,13 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
+
 ---
 
 > [!NOTE]
-> Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+> Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 
 > [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
+> Create your slides in Markdown - click the _Slides_ button to check out the example.
 
 Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).

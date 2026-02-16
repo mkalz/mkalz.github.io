@@ -3,20 +3,19 @@
 
 title: "Identifying Critical Features for Formative Essay Feedback with Artificial Neural Networks and Backward Elimination"
 authors:
-- Mohsin Abbas
-- Peter van Rosmalen
-- me
-date: 2019-12-03T11:02:28+02:00
-
+  - Mohsin Abbas
+  - Peter van Rosmalen
+  - me
+date: "2019-12-03T11:02:28+02:00"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2019-12-03T11:02:28+02:00
+publishDate: "2019-12-03T11:02:28+02:00"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['paper-conference']
+publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Proceedings of ECTEL 2019"
@@ -49,7 +48,7 @@ url_source:
 url_video:
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
@@ -74,6 +73,7 @@ projects: [PhD-Mohsin-Abbas]
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
+
 ---
 
-Abbas, M., van Rosmalen, P., & Kalz, M. (2019). Identifying critical features for formative essay feedback with artificial neural networks and backward elimination. In Scheffel, M., Broisin, J., Pammer-Schindler, V., Ioannou, A., Schneider, J. (eds) *Transforming Learning with Meaningful Technologies. EC-TEL 2019.* (pp. 396-408). Lecture Notes in Computer Science, vol 11722. Springer, Cham. <https://doi.org/10.1007/978-3-030-29736-7_30>
+Abbas, M., van Rosmalen, P., & Kalz, M. (2019). Identifying critical features for formative essay feedback with artificial neural networks and backward elimination. In Scheffel, M., Broisin, J., Pammer-Schindler, V., Ioannou, A., Schneider, J. (eds) _Transforming Learning with Meaningful Technologies. EC-TEL 2019._ (pp. 396-408). Lecture Notes in Computer Science, vol 11722. Springer, Cham. <https://doi.org/10.1007/978-3-030-29736-7_30>
