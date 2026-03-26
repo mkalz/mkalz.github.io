@@ -33,7 +33,7 @@ sections:
       title: "📚 My Research"
       subtitle: ""
       text: |-
-        I am a researcher and professor in the field of educational technology. I have a broad interest in the design and role of digital technology for lifelong learning and knowledge construction. I have more than 20 years experience 
+        I am a researcher and professor in the field of educational technology. I have a broad interest in the design and role of digital technology for lifelong learning and knowledge construction. I have more than 2 years experience 
 
 
 

@@ -1,19 +1,17 @@
 hugoblox:
   schema: "2.0"
   identity:
-    name: Dr. Marco Kalz
+    name: Prof. Dr. Marco Kalz
     type: person
-    tagline: Researching educational technology
-    description: "Dr. Marco Kalz is a professor of educational technology at Heidelberg University of Education and international consultant for learning innovations. "
-    organization: Heidelberg University of Education
-    social: {}
+    tagline: Researcher in Educational Technology
+    description: ""
   theme:
     mode: system
-    pack: marine
+    pack: default
     colors:
-      primary: blue
-      secondary: "teal"
-      neutral: "neutral"
+      primary: violet
+      secondary: ""
+      neutral: ""
   typography:
     font: sans
     size: md
@@ -28,19 +26,11 @@ hugoblox:
     align: center
     search: true
     theme_toggle: true
-    cta:
-      enable: true
-      text: Contact me
-      url: /contact
   footer:
     style: minimal
     language_switcher: true
   copyright:
     notice: © {year} {name}
-    license:
-      allow_commercial: true
-      allow_derivatives: true
-      share_alike: false
   content:
     math:
       enable: false
@@ -50,11 +40,3 @@ hugoblox:
       enable: true
   search:
     enable: true
-    suggestions:
-      - Educational Technology
-  locale:
-    address_format: en-us
-  privacy:
-    enable: true
-  pro:
-    hide_attribution: false
