@@ -5,6 +5,7 @@ hugoblox:
     type: person
     tagline: Researcher in Educational Technology
     description: ""
+    organization: Heidelberg University of Education
   theme:
     mode: system
     pack: default
@@ -15,6 +16,7 @@ hugoblox:
   typography:
     font: sans
     size: md
+    pack: editorial
   layout:
     radius: md
     spacing: comfortable
@@ -29,14 +31,29 @@ hugoblox:
   footer:
     style: minimal
     language_switcher: true
+    text: Made with ❤️ in Heidelberg/Aachen and on the road.
   copyright:
     notice: © {year} {name}
+    license:
+      allow_derivatives: true
+      allow_commercial: true
   content:
     math:
       enable: false
     toc:
       enable: true
     reading_time:
-      enable: true
+      enable: false
   search:
     enable: true
+  seo:
+    location:
+      phone: "+496221477331"
+  comments:
+    enable: true
+  pro:
+    hide_attribution: false
+  locale:
+    date_format: 2. Jan 2026
+    time_format: 15:04
+    address_format: en-us
