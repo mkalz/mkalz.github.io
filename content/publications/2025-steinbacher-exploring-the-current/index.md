@@ -23,7 +23,7 @@ featured: false
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: [Interact-Europe-100]
+projects: [Interact100]
 tags:
   - cancer education
   - medical education
