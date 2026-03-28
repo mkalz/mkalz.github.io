@@ -24,7 +24,7 @@ featured: false
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - Interact100    # Matches the project folder name
+  - INTERACT100    # Matches the project folder name
 
 tags:
   - cancer education
