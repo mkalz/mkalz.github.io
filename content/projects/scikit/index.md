@@ -1,7 +1,7 @@
 ---
 title: scikit-learn
 projects:
-  - Interact-Europe-100   # Matches the project folder name
+  - Interact-Europe-100 # Matches the project folder name
 date: 2023-10-26
 links:
   - type: site

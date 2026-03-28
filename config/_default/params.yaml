@@ -55,5 +55,5 @@ hugoblox:
     hide_attribution: false
   locale:
     date_format: 2. Jan 2026
-    time_format: 15:04
+    time_format: "15:04"
     address_format: en-us

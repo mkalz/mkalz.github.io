@@ -17,7 +17,7 @@ categories:
   - R&D
   - H2020
   - EU Health
-date: 2023-11-29T23:25:23+02:00
+date: "2023-11-29T23:25:23+02:00"
 external_link: ""
 image:
   caption: ""
