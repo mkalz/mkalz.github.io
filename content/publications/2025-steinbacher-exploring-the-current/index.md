@@ -3,7 +3,7 @@ title: |
   Exploring the Current Use of Educational Technologies in the Oncology
     Domain Across Europe: A Cross-Sectional Study
 projects:
-  - INTERACT100    # Matches the project folder name
+  - test-project # Matches the project folder name
 authors:
   - Jana Steinbacher
   - Taibe Kulaksız
