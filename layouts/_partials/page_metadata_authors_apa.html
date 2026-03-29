@@ -7,7 +7,7 @@
 
   {{- $formatted := slice -}}
   {{- range $i, $raw := $authors -}}
-    {{- $name := $raw | trim -}}
+    {{- $name := $raw | trim " \t\n\r" -}}
     {{- $parts := split $name " " -}}
     {{- $last := index $parts (sub (len $parts) 1) -}}
     {{- $firstNames := slice -}}
