@@ -1,0 +1,33 @@
+{{- $authors := .Params.authors -}}
+
+{{ if $authors }}
+  {{ if not (reflect.IsSlice $authors) }}
+    {{- $authors = slice $authors -}}
+  {{ end }}
+
+  {{- $formatted := slice -}}
+  {{- range $i, $raw := $authors -}}
+    {{- $name := $raw | trim -}}
+    {{- $parts := split $name " " -}}
+    {{- $last := index $parts (sub (len $parts) 1) -}}
+    {{- $firstNames := slice -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $firstNames = first (sub (len $parts) 1) $parts -}}
+    {{- end -}}
+    {{- $initials := slice -}}
+    {{- range $firstNames -}}
+      {{- if ne . "" -}}
+        {{- $initial := substr . 0 1 -}}
+        {{- $initials = $initials | append (printf "%s." $initial) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $formatted = $formatted | append (printf "%s, %s" $last (delimit $initials " ")) -}}
+  {{- end -}}
+
+  {{- range $index, $author := $formatted -}}
+    {{- if gt $index 0 -}}
+      {{- if eq (sub (len $formatted) 1) $index -}} & {{- else -}}, {{- end -}}
+    {{- end -}}
+    {{- $author -}}
+  {{- end -}}
+{{ end }}
