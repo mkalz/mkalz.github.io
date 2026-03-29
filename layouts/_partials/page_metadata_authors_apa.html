@@ -21,7 +21,9 @@
         {{- $initials = $initials | append (printf "%s." $initial) -}}
       {{- end -}}
     {{- end -}}
-    {{- $formatted = $formatted | append (printf "%s, %s" $last (delimit $initials " ")) -}}
+    {{- $authorStr := printf "%s, %s" $last (delimit $initials " ") -}}
+    {{- $authorStr = replaceRE "\\s+$" "" $authorStr -}}
+    {{- $formatted = $formatted | append $authorStr -}}
   {{- end -}}
 
   {{- range $index, $author := $formatted -}}
