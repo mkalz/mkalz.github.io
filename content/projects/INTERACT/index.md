@@ -38,7 +38,12 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
-
+funders:
+  - name: European Commission
+    url: "https://commission.europa.eu/"
+    logo: "funders/eu_co_funded_en.jpg"
+    role: "EU co-funded via the EU Health Programme"
+    description: "Funded by the European Commission under the EU Health Programme as part of Europe’s Beating Cancer Plan."
 ---
 
 **INTERACT EUROPE: Innovative collaboration for Inter-specialty cancer training across Europe(funded via the EU Health Programme by the European Commission), July 2022 – November 2023, Budget: 2.6 Mio EUR (170,826.80 EUR acquired for own institution)**
