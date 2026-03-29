@@ -35,3 +35,5 @@ tags:
   - multi-disciplinary learning
 
 ---
+
+Kulaksız, T., Steinbacher, J., & Kalz, M. (2025). Exploring the Current Use of Educational Technologies in the Oncology Domain Across Europe: A Cross-Sectional Study. _Journal of Cancer Education_. https://doi.org/10.1007/s13187-025-02703-1
