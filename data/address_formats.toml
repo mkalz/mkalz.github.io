@@ -1,0 +1,5 @@
+["en-us"]
+format = "{{ .recipient }}\n{{ .organization }}\n{{ .street_address }}\n{{ .locality }}, {{ .region }} {{ .postal_code }}\n{{ .country }}"
+
+["en-US"]
+format = "{{ .recipient }}\n{{ .organization }}\n{{ .street_address }}\n{{ .locality }}, {{ .region }} {{ .postal_code }}\n{{ .country }}"
