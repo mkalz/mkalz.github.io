@@ -33,7 +33,7 @@ publications:
 funders:
   - name: European Commission
     url: "https://commission.europa.eu/"
-    logo: "funders/european-commission.svg"
+    logo: "funders/eu_co_funded_en.jpg"
     role: "EU co-funder via the EU Health Programme"
     description: "Funded by the European Commission under the EU Health Programme as part of Europe’s Beating Cancer Plan."
 
