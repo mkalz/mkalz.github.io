@@ -22,7 +22,7 @@
 {{- end -}}
 
 {{- if and $hb_icon_check $hb_data_check $hb_brands_check $hb_uid_check $hb_module_check -}}
-  {{ return "verified" }}
+  {{- "verified" -}}
+{{- else -}}
+  {{- "failed" -}}
 {{- end -}}
-
-{{ return "failed" }}
