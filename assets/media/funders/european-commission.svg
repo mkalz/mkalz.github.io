@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>European Commission funder logo</title>
+  <rect width="120" height="120" rx="24" fill="#00439d" />
+  <circle cx="60" cy="60" r="32" fill="#ffffff" opacity="0.15" />
+  <text x="50%" y="46%" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="#ffffff">EC</text>
+  <text x="50%" y="70%" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="8" fill="#ffffff">European Commission</text>
+</svg>

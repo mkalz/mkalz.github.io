@@ -1,0 +1,62 @@
+{{/* Render project funder logos when page front matter provides `funders` or `funder`. */}}
+{{ $funders := .Params.funders | default .Params.funder }}
+{{ if $funders }}
+  {{ if reflect.IsMap $funders }}
+    {{ $funders = slice $funders }}
+  {{ end }}
+  {{ if gt (len $funders) 0 }}
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold tracking-tight">Funding & Support</h2>
+      <div class="mt-4 grid gap-6 lg:grid-cols-2">
+        {{ range $funders }}
+          {{ $url := .url | default .link }}
+          {{ $logo := .logo }}
+          {{ $logo_src := "" }}
+          {{ if $logo }}
+            {{ if strings.HasPrefix (printf "%v" $logo) "http" }}
+              {{ $logo_src = printf "%v" $logo }}
+            {{ else }}
+              {{ $logo_resource := resources.Get (printf "media/%v" $logo) }}
+              {{ if $logo_resource }}
+                {{ $logo_src = $logo_resource.RelPermalink }}
+              {{ else }}
+                {{ $logo_src = printf "%v" $logo }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          <article class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md dark:border-slate-700/60 dark:bg-slate-950/80">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex items-center gap-4">
+                {{ if $logo_src }}
+                  <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-white p-3 shadow-sm dark:bg-slate-900">
+                    <img src="{{ $logo_src }}" alt="{{ .name }}" class="max-h-12 max-w-full object-contain" loading="lazy" />
+                  </div>
+                {{ else }}
+                  <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-200 text-sm font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                    Logo
+                  </div>
+                {{ end }}
+                <div class="min-w-0">
+                  {{ if $url }}
+                    <a href="{{ $url }}" target="_blank" rel="noopener" class="text-lg font-semibold text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-300">
+                      {{ .name }}
+                    </a>
+                  {{ else }}
+                    <div class="text-lg font-semibold text-slate-900 dark:text-white">{{ .name }}</div>
+                  {{ end }}
+                  {{ with .role }}
+                    <p class="text-sm text-slate-500 dark:text-slate-400">{{ . }}</p>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+            {{ with .description }}
+              <div class="text-sm leading-7 text-slate-700 dark:text-slate-300">{{ . | markdownify }}</div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

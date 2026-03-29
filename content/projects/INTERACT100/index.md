@@ -30,6 +30,12 @@ url_video: ""
 slides: ""
 publications:
   - 2025-steinbacher-exploring-the-current
+funders:
+  - name: European Commission
+    url: "https://commission.europa.eu/"
+    logo: "funders/european-commission.svg"
+    role: "EU co-funder via the EU Health Programme"
+    description: "Funded by the European Commission under the EU Health Programme as part of Europe’s Beating Cancer Plan."
 
 ---
 
