@@ -17,7 +17,8 @@
             </a>
           </div>
           <div class="flex flex-wrap gap-2">
-            {{ $source := index (where $pub.Params.links "type" "source") 0 }}
+            {{ $links := $pub.Params.links | default (slice) }}
+            {{ $source := index (where $links "type" "source") 0 }}
             {{ if $source }}
               <a href="{{ $source.url }}" target="_blank" rel="noopener" class="inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400">
                 Read source
