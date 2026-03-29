@@ -144,9 +144,6 @@
         </div>
       </div>
 
-      {{ partial "project-funders.html" . }}
-
-
       {{ $featured := partial "functions/get_featured_image.html" . }}
       {{/* Safely extract image parameters - handle case where image is not a map */}}
       {{ $image_params := dict }}
@@ -311,6 +308,8 @@
           <span data-pagefind-filter="category" style="display:none;">{{ index . 0 }}</span>
         {{ end }}
         {{ .Content }}
+
+        {{ partial "project-funders.html" . }}
 
         {{ partial "related-publications.html" . }}
       </div>
