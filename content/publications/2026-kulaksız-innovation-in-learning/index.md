@@ -33,6 +33,7 @@ abstract: Technology-enhanced learning (TEL) is a domain-dependent field of expe
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: [Interact-Europe-100]
+
 ---
 
 Kulaksız, T., Steinbacher, J., & Kalz, M. (2026). Innovation in Learning Design Within the Zone of Proximal Implementation: Developing Technology-Enhanced Learning Scenarios for Cancer Professionals. _Technology, Knowledge and Learning_, 1-23. https://doi.org/10.1007/s10758-026-09962-x

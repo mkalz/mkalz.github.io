@@ -55,5 +55,5 @@ hugoblox:
     hide_attribution: false
   locale:
     date_format: 02.01.2006
-    time_format: 15:04
+    time_format: "15:04"
     address_format: en-US
