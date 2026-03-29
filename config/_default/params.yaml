@@ -4,7 +4,7 @@ hugoblox:
     name: Prof. Dr. Marco Kalz
     type: person
     tagline: Researcher in Educational Technology
-    description: ""
+    description: "Dr. Marco Kalz is a researcher and professor of educational technology at the Heidelberg University of Education."
     organization: Heidelberg University of Education
   theme:
     mode: system
@@ -54,6 +54,6 @@ hugoblox:
   pro:
     hide_attribution: false
   locale:
-    date_format: 2. Jan 2026
-    time_format: "15:04"
-    address_format: en-us
+    date_format: 02.01.2006
+    time_format: 15:04
+    address_format: en-US
