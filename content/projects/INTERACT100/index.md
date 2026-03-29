@@ -28,8 +28,6 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 slides: ""
-publications:
-  - 2025-steinbacher-exploring-the-current
 funders:
   - name: European Commission
     url: "https://commission.europa.eu/"
