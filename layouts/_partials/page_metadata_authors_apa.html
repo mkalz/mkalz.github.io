@@ -25,9 +25,9 @@
   {{- end -}}
 
   {{- range $index, $author := $formatted -}}
-    {{- if gt $index 0 -}}
-      {{- if eq (sub (len $formatted) 1) $index -}} & {{- else -}}, {{- end -}}
-    {{- end -}}
-    {{- $author -}}
+    {{ if gt $index 0 }}
+      {{ if eq (sub (len $formatted) 1) $index }} & {{ else }}, {{ end }}
+    {{ end }}
+    {{ $author }}
   {{- end -}}
 {{ end }}
