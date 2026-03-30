@@ -266,9 +266,9 @@
           </div>
         {{ end }}
 
-        {{ if .Params.publication }}
+        {{ if or .Params.publication .Params.publication_short }}
           <div class="font-bold text-2xl">{{ i18n "publication" }}</div>
-          <div>{{ .Params.publication | markdownify }}</div>
+          <div>{{ partial "functions/publication_details" (dict "item" .) | safeHTML }}</div>
         {{ end }}
 
         {{ if eq .Type "events" }}

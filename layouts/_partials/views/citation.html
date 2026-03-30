@@ -7,15 +7,7 @@
   {{ $doi = $item.Params.hugoblox.ids.doi }}
 {{ end }}
 
-{{ $publication_full := $item.Params.publication | default $item.Params.publication_short }}
-{{ $formatted_publication := "" }}
-{{ if $publication_full }}
-  {{ if in $publication_full "*" }}
-    {{ $formatted_publication = $publication_full | markdownify }}
-  {{ else }}
-    {{ $formatted_publication = printf "<em>%s</em>" (htmlEscape $publication_full) | safeHTML }}
-  {{ end }}
-{{ end }}
+{{ $formatted_publication := partial "functions/publication_details" (dict "item" $item) }}
 
 <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
