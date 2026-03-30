@@ -21,6 +21,7 @@ hugoblox:
     radius: md
     spacing: comfortable
     avatar_shape: circle
+    avatar_source: open-peeps
   header:
     enable: true
     style: navbar

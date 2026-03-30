@@ -1,0 +1,150 @@
+{{/*
+Return a normalized HugoBlox author/person profile from data.
+This site override adds support for a local Open Peeps illustration fallback.
+*/}}
+
+{{- $input := . -}}
+{{- $slug := "" -}}
+{{- $rawTitle := "" -}}
+
+{{- $inputType := printf "%T" $input -}}
+
+{{- if (reflect.IsMap $input) -}}
+  {{- $slug = index $input "slug" | default "" -}}
+  {{- with index $input "title" }}{{ $rawTitle = . }}{{ end -}}
+{{- else if eq $inputType "string" -}}
+  {{- $slug = $input -}}
+  {{- $rawTitle = $input -}}
+{{- else -}}
+  {{- $slug = printf "%v" $input -}}
+{{- end -}}
+
+{{- $rawTitle = trim $rawTitle " " -}}
+
+{{- $slug = $slug | urlize -}}
+
+{{- $data := index site.Data.authors $slug -}}
+{{- $hasData := $data -}}
+
+{{- /* Structured name resolution */ -}}
+{{- $name := $data.name -}}
+{{- $display := "" -}}
+{{- $given := "" -}}
+{{- $family := "" -}}
+{{- $middle := "" -}}
+{{- $alternate := "" -}}
+{{- $namePronunciation := "" -}}
+{{- $namePronouns := "" -}}
+
+{{- if $name.display }}{{ $display = $name.display }}{{ end -}}
+{{- if $name.given }}{{ $given = $name.given }}{{ end -}}
+{{- if $name.family }}{{ $family = $name.family }}{{ end -}}
+{{- if $name.middle }}{{ $middle = $name.middle }}{{ end -}}
+{{- if $name.alternate }}{{ $alternate = $name.alternate }}{{ end -}}
+{{- if $name.pronunciation }}{{ $namePronunciation = $name.pronunciation }}{{ end -}}
+{{- if $name.pronouns }}{{ $namePronouns = $name.pronouns }}{{ end -}}
+
+{{- $title := "" -}}
+{{- if $display -}}
+  {{- $title = $display -}}
+{{- else if $data.title -}}
+  {{- $title = $data.title -}}
+{{- else if $rawTitle -}}
+  {{- $title = $rawTitle -}}
+{{- else -}}
+  {{- $title = $slug | humanize | title -}}
+{{- end -}}
+
+{{- $role := $data.role -}}
+{{- $bio := $data.bio -}}
+{{- $status := $data.status -}}
+{{- $affiliations := $data.affiliations -}}
+{{- $ids := $data.ids -}}
+{{- $links := $data.links -}}
+{{- $isOwner := or ($data.is_owner) ($data.superuser) -}}
+{{- $pronouns := $namePronouns | default $data.pronouns -}}
+{{- $userGroups := $data.user_groups -}}
+{{- $interests := $data.interests -}}
+{{- $education := $data.education -}}
+{{- $experience := or $data.experience $data.work -}}
+{{- $skills := $data.skills -}}
+{{- $languages := $data.languages -}}
+{{- $awards := $data.awards -}}
+{{- $graduationYear := $data.graduation_year -}}
+{{- $weight := $data.weight -}}
+{{- $nameFamily := $data.name.family | default $family -}}
+{{- $postnominals := slice -}}
+{{- if $data.postnominals -}}
+  {{- if (reflect.IsSlice $data.postnominals) -}}
+    {{- $postnominals = $data.postnominals -}}
+  {{- else -}}
+    {{- $postnominals = slice $data.postnominals -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Avatar resolution: look in assets/media/authors/<slug>.* */ -}}
+{{- $avatar := resources.GetMatch (printf "media/authors/%s.*" $slug) -}}
+
+{{- /* Open Peeps local avatar library support */ -}}
+{{- $avatar_source := site.Params.hugoblox.layout.avatar_source | default "default" -}}
+{{- $open_peeps_names := slice
+  "5e5361509588e07866833c9b_peep-standing-9.png"
+  "5e535e699588e076f681a6ce_peep-sitting-4.png"
+  "5e53612a9b55b01ab457bb8f_peep-standing-8.png"
+  "5e53624e9b55b0f1fb5853e5_peep-standing-17.png"
+  "5e535ea2c6b2492ca92dbc09_peep-sitting-6.png"
+  "5e5360d7e35d3804bf6ab0cc_peep-standing-5.png"
+  "5e5361ced399237000595b44_peep-standing-13.png"
+  "5e535ef6c67e79bf6998c86e_peep-sitting-9.png"
+  "5e535fdc550b76e8aefa4aa9_peep-sitting-17.png"
+  "5e5361f39b55b056e4581ad5_peep-standing-14.png"
+  "5e5360f1c67e798fef9a241c_peep-standing-6.png"
+  "5e53609b46008005d1915a35_peep-standing-3.png"
+-}}
+{{- $open_peeps_mode := or (eq $avatar_source "open-peeps") (and (eq $avatar_source "open-peeps-fallback") (not $avatar)) -}}
+{{- if $open_peeps_mode -}}
+  {{- $open_peeps_count := len $open_peeps_names -}}
+  {{- $index := 0 -}}
+  {{- if gt $open_peeps_count 0 -}}
+    {{- $index = mod (len $slug) $open_peeps_count -}}
+  {{- end -}}
+  {{- $open_peeps_file := index $open_peeps_names $index -}}
+  {{- $open_peeps_avatar := resources.GetMatch (printf "media/open-peeps/%s" $open_peeps_file) -}}
+  {{- if $open_peeps_avatar -}}
+    {{- $avatar = $open_peeps_avatar -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $profile := dict
+  "slug" $slug
+  "title" $title
+  "name_display" $display
+  "name_given" $given
+  "name_family" $family
+  "name_family_pref" $nameFamily
+  "name_middle" $middle
+  "name_alternate" $alternate
+  "name_pronunciation" $namePronunciation
+  "role" $role
+  "bio" $bio
+  "status" $status
+  "affiliations" $affiliations
+  "ids" $ids
+  "links" $links
+  "pronouns" $pronouns
+  "user_groups" $userGroups
+  "interests" $interests
+  "education" $education
+  "experience" $experience
+  "skills" $skills
+  "languages" $languages
+  "awards" $awards
+  "graduation_year" $graduationYear
+  "weight" $weight
+  "postnominals" $postnominals
+  "is_owner" $isOwner
+  "has_data" (not (eq $hasData nil))
+  "avatar" $avatar
+-}}
+
+{{- return $profile -}}
