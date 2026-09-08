@@ -13,7 +13,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-Der Stifterverband hat sich u.a. auf Basis meiner kritischen Analyse von Future-Skills-Modellen und Frameworks (Kalz, 2023) daran gemacht, ein sog. "Future Skills Framework 2030" zu erarbeiten. Dabei wurde vor allem im [wissenschaftlichen Bericht] (https://www.stifterverband.org/sites/default/files/2025-12/future_skills_2030_wissenschaftlicher_bericht.pdf) die Vorgehensweise transparent gemacht, was es mir überhaupt ermöglicht, die Entstehung des aktualisierten Frameworks nachzuvollziehen (Gehrs, Horstmann, Kunz, Eigbrecht et al., 2025).
+Der Stifterverband hat sich u.a. auf Basis meiner kritischen Analyse von Future-Skills-Modellen und Frameworks (Kalz, 2023) daran gemacht, ein sog. "Future Skills Framework 2030" zu erarbeiten. Dabei wurde vor allem im [wissenschaftlichen Bericht](https://www.stifterverband.org/sites/default/files/2025-12/future_skills_2030_wissenschaftlicher_bericht.pdf) die Vorgehensweise transparent gemacht, was es mir überhaupt ermöglicht, die Entstehung des aktualisierten Frameworks nachzuvollziehen (Gehrs, Horstmann, Kunz, Eigbrecht et al., 2025).
 
 Ich arbeite mit meinen Doktorand:innen auch an unterschiedlichen Frameworks und Modellen und wir orientieren uns dabei an allgemein akzeptierten Vorgehensweisen, um theoretische Konzepte auch mit Daten zu unterfüttern. Damit versuchen wir, in einem langwierigen Verfahren unsere Annahmen über mehrere Schritte und mit unabhängigen Datenerhebungen zu bestätigen oder zu verwerfen. Dies ist ein recht aufwändiger Prozess und selbst nach der Einreichung bei einer Zeitschrift vergehen oft noch Monate, bis wir allen Anforderungen der Gutacher:innen gerecht werden.
 
