@@ -2,8 +2,7 @@
 title: Future Skills 2030. Wie belastbar ist das neue Framework?
 subtitle:
 date: 2026-09-08T09:36:59.875Z
-authors:
-  - admin
+authors: [me]
 draft: false
 featured: true
 tags: [future skills, pca, methods, review]
