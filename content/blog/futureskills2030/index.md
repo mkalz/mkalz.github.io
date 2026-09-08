@@ -1,7 +1,7 @@
 ---
 title: Future Skills 2030. Wie belastbar ist das neue Framework?
 subtitle:
-date: 2026-09-08T09:36:59.875Z
+date: 2026-09-08T09:36:59+02:00
 authors: [me]
 draft: false
 featured: true
