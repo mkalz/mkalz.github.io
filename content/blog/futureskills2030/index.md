@@ -6,15 +6,8 @@ authors:
   - admin
 draft: false
 featured: true
-tags:
-  - future skills
-  - pca
-  - methods
-  - review
-categories:
-  - research
-  - reflection
-  - daily improvisation
+tags: [future skills, pca, methods, review]
+categories: [research, reflection, replication]
 projects: []
 image:
   filename: featured.png
