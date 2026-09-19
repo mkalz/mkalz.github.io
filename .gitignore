@@ -71,3 +71,7 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+# Automatically generated W Social snapshot
+/data/wsocial.json
+/static/media/wsocial/
