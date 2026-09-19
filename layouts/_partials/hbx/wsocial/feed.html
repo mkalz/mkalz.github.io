@@ -1,0 +1,115 @@
+{{/* 
+  Kompakter W-Social-Feed für die linke Spalte
+  des Biography-Blocks.
+*/}}
+{{ with site.Data.wsocial }}
+  <!-- WSOCIAL-DATA-FOUND: posts={{ len .posts }} -->
+{{ else }}
+  <!-- WSOCIAL-DATA-NOT-FOUND -->
+{{ end }}
+
+{{ $feed := site.Data.wsocial }}
+
+{{ with $feed }}
+  {{ $currentFeed := . }}
+
+  {{ with .posts }}
+    {{ $stylesheet := resources.Get "css/wsocial-feed.css" }}
+
+    {{ with $stylesheet }}
+      {{ $processedStylesheet := . | minify | fingerprint }}
+
+      <link
+        rel="stylesheet"
+        href="{{ $processedStylesheet.RelPermalink }}"
+        integrity="{{ $processedStylesheet.Data.Integrity }}"
+      >
+    {{ end }}
+
+    <aside
+      class="wsocial-profile-feed"
+      aria-labelledby="wsocial-feed-heading"
+    >
+      <div class="wsocial-compact-heading">
+        <div>
+          <span class="wsocial-kicker">
+            W Social
+          </span>
+
+          <h2 id="wsocial-feed-heading">
+            Aktuelles
+          </h2>
+        </div>
+
+        <a
+          class="wsocial-profile-link"
+          href="{{ $currentFeed.profile_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Profil von {{ $currentFeed.display_name }} auf W Social öffnen"
+        >
+          @{{ $currentFeed.handle }}
+        </a>
+      </div>
+
+      <div class="wsocial-compact-list">
+        {{ range . }}
+          {{ $post := . }}
+
+          <article class="wsocial-compact-card">
+            <div class="wsocial-post-text">
+              {{ $post.text
+                | htmlEscape
+                | replaceRE "\n" "<br>"
+                | safeHTML
+              }}
+            </div>
+
+            <div class="wsocial-post-meta">
+              <time datetime="{{ $post.created_at }}">
+                {{ dateFormat "02.01.2006" $post.created_at }}
+              </time>
+
+              <span
+                class="wsocial-stat"
+                aria-label="{{ $post.like_count }} Likes"
+                title="Likes"
+              >
+                ♥ {{ $post.like_count }}
+              </span>
+
+              <span
+                class="wsocial-stat"
+                aria-label="{{ $post.reply_count }} Antworten"
+                title="Antworten"
+              >
+                ↩ {{ $post.reply_count }}
+              </span>
+            </div>
+
+            <a
+              class="wsocial-post-link"
+              href="{{ $post.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vollständigen Beitrag auf W Social öffnen"
+            >
+              Beitrag öffnen
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+
+      <a
+        class="wsocial-all-posts"
+        href="{{ $currentFeed.profile_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Alle Beiträge auf W Social
+        <span aria-hidden="true">→</span>
+      </a>
+    </aside>
+  {{ end }}
+{{ end }}

@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+    schedule:
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: read
@@ -207,6 +209,11 @@ jobs:
         with:
           fetch-depth: 0
           submodules: recursive
+      - name: Create W Social snapshot
+        env:
+          WSOCIAL_HANDLE: mkalz.wsocial.eu
+          WSOCIAL_LIMIT: "2"
+        run: node scripts/fetch-wsocial.mjs
 
       - name: Set up Go
         uses: actions/setup-go@v5

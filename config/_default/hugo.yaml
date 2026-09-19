@@ -63,6 +63,14 @@ markup:
     renderer:
       unsafe: true
 security:
+  exec:
+    allow:
+      - "^(dart-)?sass$"
+      - "^go$"
+      - "^git$"
+      - "^node$"
+      - "^postcss$"
+      - "^tailwindcss$"
   _merge: deep
 sitemap:
   _merge: deep
