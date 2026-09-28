@@ -2,14 +2,12 @@ name: Update W Social snapshot
 
 on:
   schedule:
-    # Stündlich zur Minute 17 (UTC)
     - cron: "17 * * * *"
-
-  # Ermöglicht einen manuellen Test
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: update-wsocial
@@ -32,7 +30,14 @@ jobs:
         run: node scripts/fetch-wsocial.mjs
 
       - name: Commit changed snapshot
+        id: auto-commit
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update W Social snapshot"
           file_pattern: "data/wsocial.json"
+
+      - name: Trigger website deployment
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main
