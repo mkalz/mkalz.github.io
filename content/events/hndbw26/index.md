@@ -40,12 +40,11 @@ image:
 slides: ""
 projects: []
 
----
-title: "Titel meines Vortrags"
-date: 2026-09-28
-
 resources:
   - src: slides.pdf
     title: Folien als PDF herunterladen
+---
+
+
 
 ---
