@@ -344,11 +344,17 @@
         {{/* Bio Section */}}
         {{ $bio_content := "" }}
         {{ $bio_override_raw := index $content "text" }}
+
         {{ if ne $bio_override_raw nil }}
           {{ $bio_content = printf "%v" $bio_override_raw | emojify | $page.RenderString }}
         {{ end }}
+
         {{ if not $bio_content }}
-          {{ with (site.Data.homepage.bio | default $profile.bio) }}{{ $bio_content = printf "%v" . | emojify | $page.RenderString }}{{ end }}
+          {{ with ($profile.homepage_bio | default $profile.bio) }}
+            {{ $bio_content = printf "%v" . | emojify | $page.RenderString }}
+          {{ end }}
+        {{ end }}
+
         {{ with $bio_content }}
         <div class="mb-12">
           <div class="flex items-center gap-4 mb-8">
