@@ -7,12 +7,6 @@ location: "Online"
 summary: "Invited talk on skillflation, artificial intelligence, future skills, and the curricular implications for higher education."
 abstract: ""
 
-categories:
-  - links:
-  - name: Slides (PDF)
-    url: slides.pdf
-    icon: document
-
 # Veranstaltungsdatum für Listen und Sortierung
 date: 2026-10-02T09:00:00+02:00
 date_end: 2026-10-02T10:00:00+02:00
@@ -46,7 +40,7 @@ image:
 slides: ""
 projects: []
 ---
-
-
+## Präsentationsfolien
+- [Folien als PDF herunterladen](slides.pdf)
 
 ---
