@@ -19,6 +19,7 @@ sections:
         psychometric scale development, design-oriented research, and conceptual
         analyses of digital transformation in education.
 
+
         I am working as a full professor of educational technology and Chief
         Information/Chief Digital Officer (CIO/CDO) at the Heidelberg University of
         Education. I serve as associate editor of the International Journal of Artificial Intelligence
