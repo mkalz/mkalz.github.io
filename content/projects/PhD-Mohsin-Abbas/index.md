@@ -43,8 +43,11 @@ slides: ""
 ---
 
 Project title: Computationally Efficient Graph-Based NLP System for Automated Essay Feedback
+
 Institution: Open University of the Netherlands/Maastricht University
+
 Co-supervision by Dr. Peter van Rosmalen (Maastricht University)
+
 Defense date: 30 October 2026
 
 Assessment Committee:
