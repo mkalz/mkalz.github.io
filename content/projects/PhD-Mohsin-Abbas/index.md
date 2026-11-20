@@ -54,5 +54,6 @@ Assessment Committee:
   - Prof. dr. H.J. Drachsler, Open Universiteit, DIPF/Goethe University Frankfurt 
   - Prof. dr. H.M. Jarodzka, Open Universiteit
 
+![Picture after the defense](./defense.jpg)
 
 {{< project-publications "PhD-Mohsin-Abbas" >}}
