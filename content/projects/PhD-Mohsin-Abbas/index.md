@@ -47,6 +47,7 @@ Project title: Computationally Efficient Graph-Based NLP System for Automated Es
 Institution: Open University of the Netherlands/Maastricht University
 
 Co-supervision by Dr. Peter van Rosmalen (Maastricht University)
+Co-promotor: Prof. dr. Wilfred Dolfsma, Open University of the Netherlands
 
 Defense date: 30 October 2026
 
