@@ -8,7 +8,7 @@ tags: [PhD]
 categories: []
 date: "2020-07-10T13:58:28+02:00"
 project_start: 2020-10-01
-project_end:
+project_end: 2026-10-30
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
@@ -42,10 +42,17 @@ slides: ""
 
 ---
 
-Project title: Automated formative feedback on essays using metrics, cues and visualization
-
-Institution: Open University of the Netherlands
-
+Project title: Computationally Efficient Graph-Based NLP System for Automated Essay Feedback
+Institution: Open University of the Netherlands/Maastricht University
 Co-supervision by Dr. Peter van Rosmalen (Maastricht University)
+Defense date: 30 October 2026
+
+Assessment Committee:
+  - Prof. dr. O. De Clercq, Ghent University
+  - Prof. dr. L. Kester, Maastricht University
+  - Prof. dr. M.M. Specht, FernUniversität Hagen
+  - Prof. dr. H.J. Drachsler, Open Universiteit, DIPF/Goethe University Frankfurt 
+  - Prof. dr. H.M. Jarodzka, Open Universiteit
+
 
 {{< project-publications "PhD-Mohsin-Abbas" >}}
